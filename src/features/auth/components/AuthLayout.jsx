@@ -4,9 +4,8 @@ import styles from './AuthLayout.module.css';
 
 export default function AuthLayout({ children, title, subtitle }) {
   return (
-    <div className={styles.page}>
-      {/* Painel decorativo botânico */}
-      <div className={styles.panel}>
+        <div className={styles.page}>
+        <div className={styles.panel}>
         <div className={styles.panelLeaf1} />
         <div className={styles.panelLeaf2} />
         <div className={styles.panelLeaf3} />
@@ -38,12 +37,11 @@ export default function AuthLayout({ children, title, subtitle }) {
         </div>
       </div>
 
-      {/* Lado do formulário */}
-      <div className={styles.formSide}>
+        <div className={styles.formSide}>
         <div className={styles.card}>
           <Link to="/" className={styles.brand}>
             <Leaf size={28} />
-            <span>PlantID</span>
+            <span>Planta Core</span>
           </Link>
 
           {title && <h1 className={styles.title}>{title}</h1>}
